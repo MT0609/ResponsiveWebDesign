@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="surveyform.css" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Alibaba Shop - Survey Form</h1>
+        <p id="description">Help us to create a perfect online shop for your convenience</p>
+    </header>
+    
+    <form id="survey-form">
+        <div class="form-element">
+            <label id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-element">
+            <label id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-element">
+            <label id="number-label">Age (optional)</label>
+            <input type="number" id="number" placeholder="Your age" min="10" max="100" required>
+        </div>
+        
+        <div class="form-element">
+            <p>You are...</p>
+            <select id="dropdown">
+                <option value="Student">Student</option>
+                <option value="Housewife">HouseWife</option>
+                <option value="Worker">Worker</option>
+                <option value="Elderly">Elderly</option>
+                <option value="other" selected>Other</option>
+            </select>
+        </div>
+
+        <div class="form-element">
+            <p>Would you recommend Alibaba Shop to a friend?</p>
+            <label><input type="radio" class="radio" name="recommend" checked> Definitely</label>
+            <label><input type="radio" class="radio" name="recommend" checked> Maybe</label>
+            <label><input type="radio" class="radio" name="recommend" checked> Not sure</label>
+        </div>
+
+        <div class="form-element">
+            <p>Which types of goods do you feel in high quality? </p>
+            <label><input class="checkbox" type="checkbox" value="Household appliances">Household appliances</label>
+            <label><input class="checkbox" type="checkbox" value="Garments">Garments</label>
+            <label><input class="checkbox"  type="checkbox" value="Food">Food</label>
+            <label><input class="checkbox" type="checkbox" value="Jewelery">Jewelery</label>
+         </div>
+         
+        <div class="form-element">
+            <p>Feel free to ask & help our shop improve quality</p>
+            <textarea></textarea>
+         </div>
+         <hr>
+        <button id="submit">Submit</button>
+    </form>
+
+</body>
+</html>

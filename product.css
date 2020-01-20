@@ -1,0 +1,93 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: honeydew;
+}
+
+#header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    background-color: springgreen;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    opacity: .8;
+}
+
+#header-img{
+    width: 60px;
+    height: 60px;
+    margin-left: 50px;
+}
+
+#nav-bar{
+    margin-left: auto;
+    margin-right: 50px;  
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-link{
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+#feature{
+    background-color: snow;
+    padding: 20px;
+    margin: 20px;
+}
+
+#review{
+    text-align: center;
+    background-image: linear-gradient(120deg, lightblue, cyan);
+    padding: 20px;
+    margin: 50px;
+}
+
+.flex-box{
+    display: flex;
+    font-size: 20px;
+    flex-wrap: wrap;    
+}
+
+.flex-element{
+    width: 31%;
+    margin: 10px;
+}
+
+#contact{
+    width: fit-content;
+    margin: auto;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .flex-element {
+        width: 100%;
+    }
+  }

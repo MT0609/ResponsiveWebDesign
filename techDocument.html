@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="techDocument.css" rel="stylesheet">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <nav id="nav-bar">
+        <header>CSS Documentation</header>
+        <ul>
+            <li><a href="#What_is_CSS" class="nav-link">What is CSS</a></li>
+            <li><a href="#How_does_CSS_affect_HTML?" class="nav-link">How does CSS affect HTML?</a></li>
+            <li><a href="#How_to_apply_your_CSS_to_your_HTML" class="nav-link">How to apply your CSS to your HTML</a></li>
+            <li><a href="#CSS_syntax" class="nav-link">CSS syntax</a></li>
+            <li><a href="#Selectors" class="nav-link">Selectors</a></li>
+            <li><a href="#CSS_values_and_units" class="nav-link">CSS values and units</a></li>
+            <li><a href="#Cascade_and_inheritance" class="nav-link">Cascade and inheritance</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="What_is_CSS">
+            <header>What is CSS</header>
+            <p>CSS is a language for specifying how documents are presented to users — 
+            how they are styled, laid out, etc. A document is usually a text file 
+            structured using a markup language — HTML is the most common markup language, but 
+            you will also come across other markup languages such as SVG or XML. Presenting a 
+            document to a user means converting it into a usable form for your audience. 
+            Browsers, like Firefox, Chrome or Internet Explorer, are designed to present 
+            documents visually, for example, on a computer screen, projector or printer.</p>
+        </section>
+
+        <section class="main-section" id="How_does_CSS_affect_HTML?">
+            <header>How does CSS affect HTML?</header>
+            <p>Web browsers apply CSS rules to a document to affect how they are displayed. 
+            A CSS rule is formed from:</p>
+            <ul>
+                <li>A set of properties, which have values set to update how the HTML content is displayed, for example I want my element's width to be 50% of its parent element, and its background to be red.</li>
+                <li>A selector, which selects the element(s) you want to apply the updated property values to. For example, I want to apply my CSS rule to all the paragraphs in my HTML document.</li>
+            </ul>
+            <p>A set of CSS rules contained within a stylesheet determines how a webpage 
+                should look. You will learn a lot more about what CSS syntax looks like in 
+                the next article of the module — CSS Syntax. The above descriptions may or 
+                may not have made sense, so let's make sure things are clear by presenting a quick example. Here is two simple CSS rules</p>
+            <code>
+                h1 {
+                    color: blue;
+                    background-color: yellow;
+                    border: 1px solid black;
+                    }
+                p {
+                    color: red;
+                }
+            </code>
+        </section>
+
+        <section class="main-section" id="How_to_apply_your_CSS_to_your_HTML">
+            <header>How to apply your CSS to your HTML</header>
+            <p>There are three different ways to apply CSS to an HTML document that 
+                you'll commonly come across, some more useful than others. These are:</p>
+            <ul>
+                <li>External stylesheet</li>
+                <li>Internal stylesheet</li>
+                <li>Inline style</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="CSS_syntax">
+            <header>CSS syntax</header>
+            <p>At its most basic level, CSS consists of two building blocks:</p>
+            <ul>
+                <li>Properties: Human-readable identifiers that indicate which stylistic features (e.g. font, width, background color) you want to change.</li>
+                <li>Values: Each specified property is given a value, which indicates how you want to change those stylistic features (e.g. what you want to change the font, width or background color to.)</li>
+            </ul>
+            <p>A property paired with a value is called a CSS declaration. CSS declarations 
+            are put within CSS Declaration Blocks. And finally, CSS declaration blocks are paired with selectors to produce CSS Rulesets (or CSS Rules). Here is the example</p>
+            <code>
+                <span>h1 {</span>
+                <span>color: blue;</span>
+                <span>background-color: yellow;</span>
+                <span>border: 1px solid black;</span>
+                <span>}</span>
+                <span>p {</span>
+                <span>color: red;</span>
+                <span>}</span>
+                <span>p, li {</span> 
+                <span>text-decoration: underline;</span> 
+                <span>}</span>
+            </code>
+        </section>
+
+        <section class="main-section" id="Selectors">
+            <header>Selectors</header>
+            <p>In CSS, selectors are used to target the HTML elements on our web pages that we want to style. There are a wide variety of CSS selectors available, allowing for fine grained precision when selecting elements to style. In the next few articles we'll run through the different types in great detail, seeing how they work.</p>
+            <p>Selectors can be divided into the following categories:</p>
+            <ul>
+                <li>Simple selectors: Match one or more elements based on element type, class, or id.</li>
+                <li>Attribute selectors: Match one or more elements based on their attributes/attribute values.</li>
+                <li>Pseudo-classes: Match one or more elements that exist in a certain state, such as an element that is being hovered over by the mouse pointer, or a checkbox that is currently disabled or checked, or an element that is the first child of its parent in the DOM tree.</li>
+                <li>Pseudo-elements: Match one or more parts of content that are in a certain position in relation to an element, for example the first word of each paragraph, or generated content appearing just before an element.</li>
+                <li>Combinators: These are not exactly selectors themselves, but ways of combining two or more selectors in useful ways for very specific selections. So for example, you could select only paragraphs that are direct descendants of divs, or paragraphs that come directly after headings.</li>
+                <li>Multiple selectors: Again, these are not separate selectors; the idea is that you can put multiple selectors on the same CSS rule, separated by commas, to apply a single set of declarations to all the elements selected by those selectors.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="CSS_values_and_units">
+            <header>CSS values and units</header>
+            <p>There are many types of CSS property values to consider, from numerical values to colors to functions that perform a certain action (like embedding a background image, or rotating an element.) Some of these rely on particular units for specifying the exact values they are representing — do you want your box to be 30 pixels wide, or 30 centimeters, or 30 ems? In this guide, we look at more common values like length, color, and simple functions, as well as exploring less common units like degrees, and even unitless numerical values.</p>
+            <p>There are many value types in CSS, some of them very common and some of them that you'll rarely come across. We won't cover all of them exhaustively in this article; just the ones that you are likely to find most useful as you continue on your path towards mastering CSS. In this article we will cover the following CSS values:</p>
+            <ul>
+                <li>Numeric values: Length values for specifying e.g. element width, border thickness, or font size, and unitless integers for specifying e.g. relative line width or number of times to run an animation.</li>
+                <li>Percentages: Can also be used to specify size or length — relative to a parent container's width or height for example, or the default font-size.</li>
+                <li>Colors: For specifying background colors, text colors, etc.</li>
+                <li>Coordinate positions: e.g. for specifying the position of a positioned element relative to the top left of the screen.</li>
+                <li>Functions: For specifying e.g. background images or background image gradients.</li>
+            </ul>
+            <p>You'll also see examples of such units in use all the way through the rest of the CSS topic, and just about every other CSS resource you see! You'll get used to it all in no time.</p>
+        </section>
+
+        <section class="main-section" id="Cascade_and_inheritance">
+            <header>Cascade and inheritance</header>
+            <p>In a previous article, we got into the various CSS selectors. At some point in your work, you'll find yourself in the situation where multiple CSS rules will have selectors matching the same element. In such cases, which CSS rule "wins", and ends up being the one that is finally applied to the element? This is controlled by a mechanism called the Cascade; this is also related to inheritance (elements will take some property values from their parents, but not others). In this article we will define what the CSS cascade is, what specificity is, what importance is, and how properties inherit from different rules.</p>
+            <p>CSS is an acronym for Cascading Style Sheets, which indicates that the notion of the cascade is important. At its most basic level, it indicates that the order of CSS rules matter, but it's more complex than that. What selectors win out in the cascade depends on three factors (these are listed in order of weight — earlier ones will overrule later ones):</p>
+            <ul>
+                <li>Importance
+                    <code>
+                        <span>#winning {
+                        background-color: red;
+                        border: 1px solid black;
+                        }</span>
+                        <span>.better {
+                        background-color: gray;
+                        border: none !important;
+                        }</span> 
+                        <span>p {
+                        background-color: blue;
+                        color: white;
+                        padding: 5px;
+                        }</span> 
+                    </code>
+                </li>
+                <li>Specifity: Specifity is basically a measure of how specific a selector is — how many elements it could match. As shown in the example seen above, element selectors have low specificity. Class selectors have a higher specificity, so will win against element selectors. ID selectors have an even higher specificity, so will win against class selectors. The only way to win against an ID selector is to use !important. And here is the CSS for the example:
+                    <code>
+                            <span>/* specificity: 0024 */</span> 
+                            <span>div div li:nth-child(2) a:hover {
+                            border: 10px solid black;
+                            }</span>
+                            <span>/* specificity: 0023 */</span>
+                            <span>div li:nth-child(2) a:hover {
+                            border: 10px dashed black;
+                            }</span>
+                            <span>/* specificity: 0033 */</span>
+                            <span>div div .nav:nth-child(2) a:hover {
+                            border: 10px double black;
+                            }</span>
+                            <span>a {
+                            display: inline-block;
+                            line-height: 40px;
+                            font-size: 20px;
+                            text-decoration: none;
+                            text-align: center;
+                            width: 200px;
+                            margin-bottom: 10px;
+                            }</span>
+                            <span>ul {
+                            padding: 0;
+                            }</span>
+                            <span>{
+                            list-style-type: none;
+                            }</span>li 
+                    </code>
+                </li>
+                <li>Source order: As mentioned above, if multiple competing selectors have the same importance and specificity, the third factor that comes into play to help decide which rule wins is source order — later rules will win over earlier rules. For example:
+                    <code>
+                        /* This rule will win */
+                        <span>.footnote {
+                        color: blue;
+                        }</span> 
+                        <span>p {
+                        color: red;
+                        }</span> 
+                    </code>
+                </li>
+            </ul>
+        </section>
+
+
+    </main>
+</body>
+</html>
