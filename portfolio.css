@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+#navbar{
+    position: fixed;
+    background-color: dodgerblue;
+    width: 100%;  
+    height: 50px;
+}
+#navbar ul{
+    margin: 10px;
+    letter-spacing: 1px;
+    list-style-type: none;
+    float: right;
+    font-size: 20px;
+}
+#navbar ul li{
+    float: left;
+    margin-right: 50px;
+    line-height: 30px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#welcome-section{
+    background: linear-gradient(120deg, violet, lightblue);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-picture{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.caption{
+    color: blueviolet;
+}
+
+#projects{
+    background: powderblue;
+    text-align: center;
+    padding: 100px;
+    height: 100vh;
+}
+#project-box{
+    display: flex;
+    justify-content: center;
+}
+.project-title{
+    margin: 20px;
+    background-color: violet;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.project-image{
+    width: 300px;
+    height: 300px;
+}
+
+#contact{
+    background-color: lightpink;
+    height: 100vh;
+    padding: 200px;
+    text-align: center;
+}
+.contact-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-btn{
+    margin: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+}
+.contact-btn:hover{
+    transform: scale(1.2);
+}
